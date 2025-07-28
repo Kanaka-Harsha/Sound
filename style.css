@@ -108,7 +108,7 @@ h1
     #container 
     {
         position:absolute;
-        top:20%;
+        top:30%;
         flex-direction: column;
         padding: 40px;
         gap: 40px;
