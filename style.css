@@ -96,7 +96,7 @@ h1
 {
     body
     {
-        height:150vh;
+        height:190vh;
     }
     h1
     {
@@ -130,7 +130,7 @@ h1
         color: black;
         border: 2px solid black;
         position: absolute;
-        top:125%;
+        top:130%;
     }
 }
 
