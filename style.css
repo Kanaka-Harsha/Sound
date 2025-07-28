@@ -1,113 +1,97 @@
 body 
 {
-    background-color: tomato;
+    background-color:rgb(7, 255, 135);
     height: 100vh;
     margin: 0;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    flex-wrap: wrap;
-}
 
+}
 #container 
 {
-    background-color: aqua;
-    padding: 120px;
+    background-color: rgba(178, 28, 237, 0.734);
+    padding: 40px;
     border-radius: 10px;
     display: flex;
     gap: 30px; 
-}
-
+    justify-content: center;
+    align-items: center;
+    flex-wrap:wrap;
+}   
 h1 
 {
-    color: black;
+    color:rgb(255, 255, 255);
     text-align: center;
     margin: 0;
-    font-size: 2.5rem;
+    font-size: 80px;
 }
-
 #button-row 
 {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 20px;
+    gap: 30px;
 }
-
 .sound-button 
 {
     width: 150px;
     height: 110px;
     background-size: cover;
     background-position: center;
-    border: 3px solid black;
-    border-radius: 8px;
+    border: 7px solid rgb(251, 187, 198);
+    border-radius: 20px;
     transition: transform 0.2s ease;
 }
-
 .sound-button:hover 
 {
     transform: scale(1.1);
     box-shadow: 0 5px 20px rgba(255, 4, 4, 0.7);
 }
-
 .span-sound
 {
    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
    font-size: 25px;
    color: black; 
 }
-
 #stop 
 {
-    width: 150px;
-    height: 80px;
+    width:200px;
     font-size: 25px;
     color: black;
     border: 2px solid black;
     position: absolute;
-    bottom: 30%;
-    right: 45%;
-    top: 75%;
+    top:70%;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-
 #playBird   
 { 
     background-image: url('images/bird.jpeg');
     background-color: #f687b3; 
     font-size: 3rem; 
 }
-
 #playCar    
 { 
     background-image: url('images/car.jpeg');    
     background-color: #63b3ed; 
     font-size: 3rem; 
 }
-
 #playAero   
 { 
     background-image: url('images/plane.jpeg');  
     background-color: #a3bffa; 
     font-size: 3rem; 
 }
-
 #playShip   
 { 
     background-image: url('images/ship.png');    
     background-color: #68d391; 
     font-size: 3rem; 
 }
-
 #playTrain  
 { 
     background-image: url('images/trainn.jpeg'); 
     background-color: #f6ad55; 
     font-size: 3rem; 
 }
-
 @media (max-width: 600px) 
 {
     body
@@ -116,11 +100,11 @@ h1
     }
     h1
     {
-        font-size: 2rem;
+        color:rgb(240, 4, 208);
+        font-size: 50px;
         position: absolute;
         top:10%;
     }
-
     #container 
     {
         position:absolute;
@@ -130,48 +114,24 @@ h1
         gap: 40px;
         flex-wrap: wrap;
     }
-
     .sound-button 
     {
-        width: 100px;
-        height: 80px;
-        font-size: 2rem;
+        width: 150px;
+        height: 110px;
+        background-size: cover;
+        background-position: center;
+        border: 5px solid rgb(241, 140, 124);
+        border-radius: 20px;
+        transition: transform 0.2s ease;    
     }
-
     #stop 
     {
-        height: 50px;
-        font-size: 20px;
-        position:absolute;
-        top:105%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        font-size: 25px;
+        color: black;
+        border: 2px solid black;
+        position: absolute;
+        top:125%;
     }
 }
 
 
-@media (min-width: 100px) 
-{
-    h1
-    {
-        font-size: 2rem; /* Make the heading smaller on phones */
-    }
-
-    #container {
-        padding: 20px; /* Reduce the container padding on phones */
-        gap: 20px;     /* Reduce the space between elements */
-    }
-
-    .sound-button {
-        width: 100px;  /* Make the buttons smaller */
-        height: 80px;
-        font-size: 2rem; /* Make the emojis smaller */
-    }
-
-    #stop 
-    {
-        height: 50px;
-        font-size: 20px;
-    }
-}
